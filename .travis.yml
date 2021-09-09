@@ -9,15 +9,14 @@ cache:
 
 install:
   - npm install
-  - npm install firebase-tools -g
 
 script:
   - npm run build
-  - firebase deploy --only hosting --token "$FIRE_TOK"
-# deploy
-#   provider: pages
-#   skip_cleanup: true
-#   github-token: $GIT_TOK
-#   local_dir: build
-#   on:
-#     branch: main
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GIT_TOK
+  local_dir: build
+  on:
+    branch: main
