@@ -1,5 +1,4 @@
 // import logo from "./logo.svg";
-import { useState } from "react";
 import blue from "../assets/blue.png";
 import red from "../assets/red.png";
 import light from "../assets/dark.png";
@@ -7,6 +6,14 @@ import dark from "../assets/light.png";
 import "../styles/App.css";
 
 function App() {
+  const handleRed = (e, f) => {
+    const pills = document.querySelectorAll(`#${e}`);
+    const hidePills = document.querySelectorAll(`#${f}`);
+    hidePills.className += " hidden";
+    console.log(pills);
+    for (let g of pills) g.className += ` animate-sideWay${e}`;
+    for (let g of hidePills) g.className += ` hidden`;
+  };
   return (
     <>
       <div className="h-screen flex items-center flex-col justify-center">
@@ -19,26 +26,42 @@ function App() {
               className="pills absolute z-0 opacity-100 group-hover:opacity-0 duration-500"
               src={dark}
               alt="shadow"
+              id="Red"
             />
             <img
               className="pills absolute z-0 opacity-0 group-hover:opacity-100 duration-500"
               src={light}
               alt="shadow"
+              id="Red"
             />
-            <img className="pills absolute z-10" src={red} alt="red_pill" />
+            <img
+              className="pills absolute z-10"
+              src={red}
+              alt="red_pill"
+              id="Red"
+              onClick={() => handleRed("Red", "Blue")}
+            />
           </span>
           <span className="flex items-center justify-center h-80 mt-0 group hover:-mt-4  duration-500 cursor-pointer">
             <img
               className="pills absolute z-0 opacity-100 group-hover:opacity-0 duration-500"
               src={dark}
               alt="shadow"
+              id="Blue"
             />
             <img
               className="pills absolute z-0 opacity-0 group-hover:opacity-100 duration-500"
               src={light}
               alt="shadow"
+              id="Blue"
             />
-            <img className="pills absolute z-10" src={blue} alt="blue_pill" />
+            <img
+              className="pills absolute z-10"
+              src={blue}
+              alt="blue_pill"
+              id="Blue"
+              onClick={() => handleRed("Blue", "Red")}
+            />
           </span>
         </div>
       </div>
