@@ -17,9 +17,11 @@ function App() {
   return (
     <>
       <div className="h-screen flex items-center flex-col justify-center">
-        <p className="font-mono absolute top-24 text-3xl mb-14 text-gray-600 ">
+        <p className="font-mono absolute top-24 text-3xl mb-14 text-gray-600">
           The Choice is yours
         </p>
+        <div className=" animate-sideWayRed"></div>
+        <div className="animate-sideWayBlue"></div>
         <div className="flex w-full items-center justify-center pt-20 animate-opa space-x-36">
           <span className=" flex items-center justify-center h-80 mt-0 group hover:-mt-4 duration-500 cursor-pointer">
             <img
