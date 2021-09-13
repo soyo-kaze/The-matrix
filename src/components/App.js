@@ -16,7 +16,7 @@ function App() {
     console.log(pills);
     for (let g of pills) g.className += ` animate-sideWay${e}`;
     for (let g of hidePills) g.className += ` hidden`;
-    setTimeout(() => history.push("/the-matrix"), 1400);
+    setTimeout(() => history.push("/the-truth"), 1400);
   };
   return (
     <>

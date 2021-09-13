@@ -9,7 +9,7 @@ import TheMatrix from "./components/TheMatrix";
 ReactDOM.render(
   <Router>
     <Switch>
-      <Route path="/the-matrix">
+      <Route path="/the-truth">
         <TheMatrix />
       </Route>
       <Route exact path="/">
