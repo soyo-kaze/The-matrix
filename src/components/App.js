@@ -4,15 +4,19 @@ import red from "../assets/red.png";
 import light from "../assets/dark.png";
 import dark from "../assets/light.png";
 import "../styles/App.css";
+import { useHistory } from "react-router-dom";
 
 function App() {
-  const handleRed = (e, f) => {
+  let history = useHistory();
+
+  const handleRed = (history, e, f) => {
     const pills = document.querySelectorAll(`#${e}`);
     const hidePills = document.querySelectorAll(`#${f}`);
     hidePills.className += " hidden";
     console.log(pills);
     for (let g of pills) g.className += ` animate-sideWay${e}`;
     for (let g of hidePills) g.className += ` hidden`;
+    setTimeout(() => history.push("/the-matrix"), 1400);
   };
   return (
     <>
@@ -41,7 +45,7 @@ function App() {
               src={red}
               alt="red_pill"
               id="Red"
-              onClick={() => handleRed("Red", "Blue")}
+              onClick={() => handleRed(history, "Red", "Blue")}
             />
           </span>
           <span className="flex items-center justify-center h-80 mt-0 group hover:-mt-4  duration-500 cursor-pointer">
@@ -62,7 +66,7 @@ function App() {
               src={blue}
               alt="blue_pill"
               id="Blue"
-              onClick={() => handleRed("Blue", "Red")}
+              onClick={() => handleRed(history, "Blue", "Red")}
             />
           </span>
         </div>

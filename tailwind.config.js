@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       animation: {
         opa: "opa 900ms ease-out forwards",
+        FadeIn: "FadeIn 900ms ease-out forwards",
         sideWayRed: "sideWayRed 1000ms ease-out forwards",
         sideWayBlue: "sideWayBlue 1000ms ease-out forwards",
       },
@@ -21,6 +22,11 @@ module.exports = {
         sideWayBlue: {
           "0%": { transform: "translateX(0px)" },
           "100%": { transform: "translateX(-60px)" },
+        },
+        FadeIn: {
+          "0%": { opacity: 0 },
+
+          "100%": { opacity: 1 },
         },
       },
     },
