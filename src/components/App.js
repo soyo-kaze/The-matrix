@@ -5,9 +5,12 @@ import light from "../assets/dark.png";
 import dark from "../assets/light.png";
 import "../styles/App.css";
 import { useHistory } from "react-router-dom";
+import { useState } from "react";
+import TheMatrix from "./TheMatrix";
 
 function App() {
   let history = useHistory();
+  let [isTruth, setTruth] = useState(false);
 
   const handleRed = (history, e, f) => {
     const pills = document.querySelectorAll(`#${e}`);
@@ -16,9 +19,11 @@ function App() {
     console.log(pills);
     for (let g of pills) g.className += ` animate-sideWay${e}`;
     for (let g of hidePills) g.className += ` hidden`;
-    setTimeout(() => history.push("/the-truth"), 1400);
+    setTimeout(() => setTruth(true), 1400);
   };
-  return (
+  return isTruth ? (
+    <TheMatrix />
+  ) : (
     <>
       <div className="h-screen flex items-center flex-col justify-center">
         <p className="font-mono absolute top-24 text-3xl mb-14 text-gray-600">
