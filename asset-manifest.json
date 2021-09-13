@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/The-matrix/static/css/main.ab490277.chunk.css",
+    "main.js": "/The-matrix/static/js/main.c846af41.chunk.js",
+    "main.js.map": "/The-matrix/static/js/main.c846af41.chunk.js.map",
+    "runtime-main.js": "/The-matrix/static/js/runtime-main.f8115fcc.js",
+    "runtime-main.js.map": "/The-matrix/static/js/runtime-main.f8115fcc.js.map",
+    "static/js/2.a19538c2.chunk.js": "/The-matrix/static/js/2.a19538c2.chunk.js",
+    "static/js/2.a19538c2.chunk.js.map": "/The-matrix/static/js/2.a19538c2.chunk.js.map",
+    "static/js/3.ded82bc9.chunk.js": "/The-matrix/static/js/3.ded82bc9.chunk.js",
+    "static/js/3.ded82bc9.chunk.js.map": "/The-matrix/static/js/3.ded82bc9.chunk.js.map",
+    "index.html": "/The-matrix/index.html",
+    "static/css/main.ab490277.chunk.css.map": "/The-matrix/static/css/main.ab490277.chunk.css.map",
+    "static/js/2.a19538c2.chunk.js.LICENSE.txt": "/The-matrix/static/js/2.a19538c2.chunk.js.LICENSE.txt",
+    "static/media/blue.60ebd7f6.png": "/The-matrix/static/media/blue.60ebd7f6.png",
+    "static/media/dark.56e60199.png": "/The-matrix/static/media/dark.56e60199.png",
+    "static/media/light.1d6cf76e.png": "/The-matrix/static/media/light.1d6cf76e.png",
+    "static/media/red.66bd0cca.png": "/The-matrix/static/media/red.66bd0cca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8115fcc.js",
+    "static/js/2.a19538c2.chunk.js",
+    "static/css/main.ab490277.chunk.css",
+    "static/js/main.c846af41.chunk.js"
+  ]
+}
